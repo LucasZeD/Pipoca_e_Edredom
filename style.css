@@ -1,0 +1,209 @@
+/*___________________________________
+|| Formatacao inicial dos elementos||
+___________________________________*/
+main,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+/*___________________________________
+||         CSS Cabeçario           ||
+___________________________________*/
+.logo {
+    background-color: rgba(255, 228, 196, 0.596);
+    width: 80px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.container-fluid {
+    background-color: #ffa76d;
+    font-size: larger;
+}
+
+a.nav-link {
+    font-weight: 600;
+}
+
+a.nav-link:hover {
+    background-color: #fabc92f5;
+    border-radius: 2px;
+}
+
+/*___________________________________
+||         CSS Footer              ||
+___________________________________*/
+footer {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: bisque;
+    /*new*/
+    position: absolute;
+}
+
+/*___________________________________
+||         CSS Body                ||
+___________________________________*/
+body {
+    background-color: #ffa76d;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container.row {
+    margin: 10px auto;
+    float: none;
+    margin-bottom: 10px;
+    
+}
+
+div.card{
+    background-color: #ffa76d;
+    transition: .3s ease background-color;
+}
+
+.card:hover{
+    background-color: #f8c6a5f8;
+    
+}
+
+
+/*________________________________________
+||         CSS Carousel                 ||
+________________________________________*/
+div.carousel-inner{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.cc {
+    /*Colocar imagem de fundo aqui*/
+    background-size: 100%;
+    background-color: #fabc92f5;
+}
+
+/*________________________________________
+||         CSS Filmes                   ||
+________________________________________*/
+#barra{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: black;
+    /*new*/
+    background-color: rgba(172, 166, 166, 0.842);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+#pesquisa {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 8px;
+    color: rgb(31, 31, 187);
+    margin-bottom: 20px;
+    /*new*/
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease background-color;
+}
+
+#pesquisa:hover {
+    font-weight: bolder;
+    background-color: aliceblue;
+    color: rgb(31, 31, 187);
+}
+
+/*Container Fluid Section*/
+div.container-fluid.Section {
+    display: flex;
+    flex-direction: column;
+    /*new*/
+    border-radius: 2px;
+    color: black;
+    background-color: rgba(102, 95, 95, 0.842);
+}
+
+/*Carregar mais filmes*/
+.button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 8px;
+
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+.button:hover {
+    font-weight: bolder;
+    background-color: aliceblue;
+    color: rgb(31, 31, 187);
+}
+/*CARDS*/
+/*CARDS*/
+/*CARDS*/
+.card-text{
+    font-size: smaller;
+}
+
+/*________________________________________
+||         CSS About me                 ||
+________________________________________*/
+div.About {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*new*/
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #fabc92f5;
+    background-color: #fabc92f5;
+    border-radius: 25px;
+}
+
+/*________________________________________
+||         CSS Lancamentos              ||
+________________________________________*/
+div.carousel-item.active {
+    margin: 20px;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    [class*="col-"] {
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    [class*="col-"] {
+        width: fit-content;
+    }
+}

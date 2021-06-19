@@ -62,27 +62,52 @@ div.container.row {
     margin: 10px auto;
     float: none;
     margin-bottom: 10px;
-    
+
 }
 
-div.card{
+div.card {
     background-color: #ffa76d;
     transition: .3s ease background-color;
+    margin-bottom: 10px;
 }
 
-.card:hover{
+.card:hover {
     background-color: #f8c6a5f8;
-    
 }
 
+/*ANIMACAO*/
 
+.card {
+    transition: transform 1500ms;
+}
+/*
+.container:focus-within .card,
+.container:hover .card {
+    transform: translateX(-15%);
+}
+
+.card:focus~.card,
+.card:hover~.card {
+    transform: translateX(15%);
+}
+*/
+.container .card:focus,
+.container .card:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.card img {
+    max-width: 100%;
+}
 /*________________________________________
 ||         CSS Carousel                 ||
 ________________________________________*/
-div.carousel-inner{
+div.carousel-inner {
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 .cc {
     /*Colocar imagem de fundo aqui*/
     background-size: 100%;
@@ -92,7 +117,7 @@ div.carousel-inner{
 /*________________________________________
 ||         CSS Filmes                   ||
 ________________________________________*/
-#barra{
+#barra {
     width: 100%;
     border: none;
     outline: none;
@@ -107,6 +132,7 @@ ________________________________________*/
     margin-top: 10px;
     transition: .3s ease background-color;
 }
+
 #pesquisa {
     width: 100%;
     border: none;
@@ -160,10 +186,11 @@ div.container-fluid.Section {
     background-color: aliceblue;
     color: rgb(31, 31, 187);
 }
+
 /*CARDS*/
 /*CARDS*/
 /*CARDS*/
-.card-text{
+.card-text {
     font-size: smaller;
 }
 

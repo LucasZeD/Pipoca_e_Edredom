@@ -1,0 +1,70 @@
+/*___________________________________
+|| Formatacao inicial dos elementos||
+___________________________________*/
+main, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+/*___________________________________
+||         CSS Cabeçario           ||
+___________________________________*/
+.logo{
+    background-color: bisque;
+    width: 80px;
+    margin: 0px;
+}
+
+/*___________________________________
+||         CSS Body                ||
+___________________________________*/
+body{
+    background-color: #ff9b57;
+}
+h1{
+    text-align: center;
+}
+div.container.row {
+    margin: 10px auto;
+    float: none;
+    margin-bottom: 10px;
+}
+div.col-3{
+  margin-top: 10px;
+  padding-top: 10px;
+  column-fill: auto;
+}
+img.imgFIM{
+    width: 75px;
+    height: auto;
+}
+img.card-img-top-noti{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+/*___________________________________
+||         CSS Footer              ||
+___________________________________*/
+footer{
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: bisque;
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    [class*="col-"]{
+        width: fit-content;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    [class*="col-"]{
+        width: fit-content;
+    }
+}
+/*@media only screen and (min-width: 1025px){
+}
+*/
